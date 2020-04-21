@@ -35,6 +35,7 @@
 		AD652CC02378294A005ED34D /* AppDelegate+MenuBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD652CBF2378294A005ED34D /* AppDelegate+MenuBuilder.swift */; };
 		AD652CC223782A8D005ED34D /*  MarkupViewController+NSToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD652CC123782A8D005ED34D /*  MarkupViewController+NSToolbar.swift */; };
 		AD652CC423782D20005ED34D /* MarkupViewController+NSTouchbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD652CC323782D20005ED34D /* MarkupViewController+NSTouchbar.swift */; };
+		D642FD1D244F464000FB26F2 /* MarkupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D642FD1C244F464000FB26F2 /* MarkupTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = AD652C742374C0FF005ED34D;
 			remoteInfo = MarkupFramework;
+		};
+		D642FD1F244F464000FB26F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD652C482374BD2F005ED34D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD652C4F2374BD2F005ED34D;
+			remoteInfo = Markup;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -93,6 +101,9 @@
 		AD652CBF2378294A005ED34D /* AppDelegate+MenuBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+MenuBuilder.swift"; sourceTree = "<group>"; };
 		AD652CC123782A8D005ED34D /*  MarkupViewController+NSToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " MarkupViewController+NSToolbar.swift"; sourceTree = "<group>"; };
 		AD652CC323782D20005ED34D /* MarkupViewController+NSTouchbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MarkupViewController+NSTouchbar.swift"; sourceTree = "<group>"; };
+		D642FD1A244F464000FB26F2 /* MarkupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarkupTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D642FD1C244F464000FB26F2 /* MarkupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkupTests.swift; sourceTree = "<group>"; };
+		D642FD1E244F464000FB26F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +122,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D642FD17244F464000FB26F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -119,6 +137,7 @@
 			children = (
 				AD652C522374BD2F005ED34D /* Markup */,
 				AD652C762374C0FF005ED34D /* MarkupFramework */,
+				D642FD1B244F464000FB26F2 /* MarkupTests */,
 				AD652C512374BD2F005ED34D /* Products */,
 			);
 			indentWidth = 2;
@@ -130,6 +149,7 @@
 			children = (
 				AD652C502374BD2F005ED34D /* Markup.app */,
 				AD652C752374C0FF005ED34D /* MarkupFramework.framework */,
+				D642FD1A244F464000FB26F2 /* MarkupTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -233,6 +253,15 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		D642FD1B244F464000FB26F2 /* MarkupTests */ = {
+			isa = PBXGroup;
+			children = (
+				D642FD1C244F464000FB26F2 /* MarkupTests.swift */,
+				D642FD1E244F464000FB26F2 /* Info.plist */,
+			);
+			path = MarkupTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -284,13 +313,31 @@
 			productReference = AD652C752374C0FF005ED34D /* MarkupFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		D642FD19244F464000FB26F2 /* MarkupTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D642FD21244F464000FB26F2 /* Build configuration list for PBXNativeTarget "MarkupTests" */;
+			buildPhases = (
+				D642FD16244F464000FB26F2 /* Sources */,
+				D642FD17244F464000FB26F2 /* Frameworks */,
+				D642FD18244F464000FB26F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D642FD20244F464000FB26F2 /* PBXTargetDependency */,
+			);
+			name = MarkupTests;
+			productName = MarkupTests;
+			productReference = D642FD1A244F464000FB26F2 /* MarkupTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		AD652C482374BD2F005ED34D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1110;
+				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "Ray Wenderlich";
 				TargetAttributes = {
@@ -299,6 +346,10 @@
 					};
 					AD652C742374C0FF005ED34D = {
 						CreatedOnToolsVersion = 11.1;
+					};
+					D642FD19244F464000FB26F2 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = AD652C4F2374BD2F005ED34D;
 					};
 				};
 			};
@@ -317,6 +368,7 @@
 			targets = (
 				AD652C4F2374BD2F005ED34D /* Markup */,
 				AD652C742374C0FF005ED34D /* MarkupFramework */,
+				D642FD19244F464000FB26F2 /* MarkupTests */,
 			);
 		};
 /* End PBXProject section */
@@ -334,6 +386,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		AD652C732374C0FF005ED34D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D642FD18244F464000FB26F2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -378,6 +437,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D642FD16244F464000FB26F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D642FD1D244F464000FB26F2 /* MarkupTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -385,6 +452,11 @@
 			isa = PBXTargetDependency;
 			target = AD652C742374C0FF005ED34D /* MarkupFramework */;
 			targetProxy = AD652C7A2374C0FF005ED34D /* PBXContainerItemProxy */;
+		};
+		D642FD20244F464000FB26F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD652C4F2374BD2F005ED34D /* Markup */;
+			targetProxy = D642FD1F244F464000FB26F2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -622,6 +694,48 @@
 			};
 			name = Release;
 		};
+		D642FD22244F464000FB26F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72SA8V3WYL;
+				INFOPLIST_FILE = MarkupTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hu.szabadember.MarkupTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Markup.app/Markup";
+			};
+			name = Debug;
+		};
+		D642FD23244F464000FB26F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72SA8V3WYL;
+				INFOPLIST_FILE = MarkupTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hu.szabadember.MarkupTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Markup.app/Markup";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -648,6 +762,15 @@
 			buildConfigurations = (
 				AD652C7F2374C0FF005ED34D /* Debug */,
 				AD652C802374C0FF005ED34D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D642FD21244F464000FB26F2 /* Build configuration list for PBXNativeTarget "MarkupTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D642FD22244F464000FB26F2 /* Debug */,
+				D642FD23244F464000FB26F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
